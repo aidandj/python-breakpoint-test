@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  breakpoint_test_python:
+    build: .
+    container_name: "breakpoint_test_python"
+    command: "python breakpoint_test.py"
+    # command: "tail -f /dev/null"
+    stdin_open: true
+    tty: true
